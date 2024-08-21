@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><span><i class="fas fa-thermometer-quarter"></i>Temperature</span>  Converter</h1>
+        <div class="input-group">
+            <h3><label for="temperature">Enter temperature:</label></h3>
+            <input type="number" id="temperature" placeholder="Enter temperature" />
+        </div>
+        <div class="conversion-group">
+           <h3><label for="scale">Select scale:</label></h3>
+            <select id="scale">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+        </div>
+        <button id="convertBtn">Convert</button>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
